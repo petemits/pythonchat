@@ -7,7 +7,7 @@
 **Entry Point**: `not detected`  
 **Codebase**: 4 source files, 4847 lines of production‑ready code  
 **Architecture**: Object‑oriented  
-**Key Components**: 8 class(es): EndlessConversation, ConversationFlowManager, DocumentConversation, IntelligentConversationEngine, _Agent, 62 function(s): _update_flow_state, _get_next_action, _assess_topic_change, _show_related_topics, _split_into_meaningful_sentences
+**Key Components**: 8 class(es): ConversationAgent, ConversationFlowManager, _Agent, DocumentProcessor, DocumentConversation, 62 function(s): _process_user_command, _reflect_on_conversation, extract_topics_from_text, _opening_exchange, _save_conversation
 
 DOCUMENT CONVERSATION ENGINE
 
@@ -49,23 +49,22 @@ I am open to conversations about how I can apply this mindset to your organisati
 ## 💡 Benefits & Ecosystem Integration
 
 ### ✨ Key Benefits
+- Automated Compliance & Governance: Embeds regulatory requirements directly into the deployment pipeline.
+- Improved Developer Productivity: Streamlines workflows, reduces boilerplate, and improves developer happiness.
+- Enhanced Data Privacy: Protects sensitive user data with rigorous encryption and access controls.
+- Enhanced Security Posture: Builds robust threat defence and data privacy into the application architecture.
 - User Retention: Enhances customer experience through personalisation and faster response times.
-- Sustainable Architecture: Reduces energy consumption, aligning technology with environmental goals.
-- Data‑Driven Decisions: Provides real‑time, accurate insights that inform strategic direction.
-- Increased Conversion Rates: Optimises user journeys and funnels to drive revenue.
-- Low‑Latency Performance: Delivers near‑instantaneous responses for user‑facing applications.
-- Scalability: Designed to handle growing volumes without proportional cost increases.
+- Actionable Business Insights: Transforms raw metrics into strategic intelligence.
+- Reduced Churn: Proactively identifies and addresses factors that cause customer attrition.
 
 ### 🔗 Integrations
 - Host Operating System (files, environment, processes)
 
 ## 📈 Scale to SaaS & Beyond
 
-- CI/CD Pipeline: Integrate GitHub Actions to automate testing and deployment with every commit.
-- Multi‑Tenancy: Extend to support multiple customers with isolated data and custom configurations.
+- Third‑Party Integrations: Expand to additional CRM, ERP, or marketing automation tools.
 - Event‑Driven Architecture: Integrate with message queues (Kafka, RabbitMQ) for asynchronous workflows.
 - Analytics Dashboard: Add real‑time monitoring and business intelligence dashboards.
-- Cloud Deployment: Containerise with Docker and deploy to AWS, GCP, or Azure for global availability.
 
 ## 🤖 AI Tools & Integrations (A–Z)
 
@@ -126,6 +125,24 @@ This project is designed to integrate seamlessly with a wide range of AI tools a
 | **ZenML** | MLOps framework for reproducible pipelines. |
 
 *This is a living list – new tools are constantly emerging. The modular design of this project makes it easy to plug in any AI service.*
+## 💻 AI Code Generation Tools (Free & Paid)
+
+To accelerate development, you can integrate these AI tools for code generation, autocompletion, and documentation. Pricing models are noted below.
+
+| Tool | Description | Pricing |
+| :--- | :--- | :--- |
+| **GitHub Copilot** | AI pair programmer. Free for open-source and verified students; paid plans from $10/month. | Freemium |
+| **Tabnine** | AI code completion for multiple languages. Free tier available; paid Pro from $12/month. | Freemium |
+| **Codeium** | AI-powered autocomplete and chat. Completely free for individual developers. | Free |
+| **Cursor** | AI-first code editor with built-in Copilot-like features. Free tier available; paid plans start at $20/month. | Freemium |
+| **Amazon CodeWhisperer** | AWS service for real‑time code suggestions. Free tier included; paid with AWS subscription. | Freemium |
+| **Replit Ghostwriter** | AI assistant in Replit's online IDE. Free tier included; paid plans from $7/month. | Freemium |
+| **Bito AI** | Code generation and explanation. Free for individuals; paid team plans. | Freemium |
+| **Sourcegraph Cody** | AI assistant for code understanding and generation. Free for individuals and open-source; paid for enterprise. | Freemium |
+| **Mintlify** | AI-powered documentation generator. Free tier; paid plans for teams. | Freemium |
+| **MightyMeld** | AI for React component generation. Free trial; paid plans from $15/month. | Freemium |
+
+*Most tools offer free tiers – perfect for personal projects and learning. Paid plans unlock higher limits and team features.*
 
 ## 📁 Project Structure
 ## 🚀 Full Program Guide (How to Run)
